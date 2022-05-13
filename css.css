@@ -1,0 +1,43 @@
+h1{
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    color: rgb(128, 126, 126);
+    font-weight: 100;
+}
+h2{
+    margin-left: 35%; 
+    font-family:Arial, Helvetica, sans-serif;
+    color: rgb(128, 126, 126);
+    font-weight: 100;
+}
+#dolar{
+    float: left;
+    margin-right: 40%;
+}
+#b1{ 
+    margin-top: 5%;
+    float: left;
+    margin-right: 15%;
+}
+#b2{ 
+    float: left;
+    margin-right: 15%;
+}
+
+#b3{
+    text-align: center;
+    margin-top: 10px;
+}
+#cambios{
+    margin-left: 35%; 
+    margin-right: 35%; 
+    border: 2px solid #00000000;
+}
+#montos{
+    text-align: center;
+}
+#button{
+    background-color: rgb(128, 126, 126);
+    border-radius: 3px;
+    color: rgb(208, 209, 209);
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link type="text/css" rel="stylesheet" href="css.css" >
+        <meta charset="utf-8"/>
+        <title>Pagina de cambio</title>
+        <script>
+            function cambiar(){
+                var num = parseFloat(document.getElementById("montos1").value);
+                if(document.getElementById('montos1').value == ''){
+                    alert("Colocar un monto en soles")
+                }else if((isNaN(document.getElementById('montos1').value))){
+                    alert("Colocar solo usando numeros")
+                }else{
+                    if(document.getElementById('b1').checked){
+                            alert((num*0.27).toFixed(2)+" dolares")
+                        }else{
+                            alert((num*0.25).toFixed(2)+" euros")    
+            }}}
+        </script>
+    </head>
+    <body>
+        <h1>CASA DE CAMBIO</h1>
+        <h2>Seleccionar moneda a enviar:</h2>
+        <div id="cambios">
+            <div id="izquierda"><input id="b1" type="radio" name="eleccion" value="opcion1"checked onclick ><p id="dolar">Dólar</p></div>
+            <div id="derecha"><input id="b2" type="radio" name="eleccion" value="opcion1" ><p id="Euro">Euro</p></div>
+        </div>
+        <h2>Ingrese monto:</h2>
+        <div id="montos" ><input type="text" id="montos1" /></div>
+        <div id="b3"><button id="button" type="button" onclick="cambiar()">Cotizar</button></div>
+    </body>
+</html>
